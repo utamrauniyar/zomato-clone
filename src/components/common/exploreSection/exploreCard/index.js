@@ -12,7 +12,6 @@ const ExploreCard = ({ restaurant, i }) => {
   const cuisines = restaurant?.info?.cuisine
     ?.map((item) => item.name)
     .slice(0, 3);
-
   const bottomContainers = restaurant?.bottomContainers;
   const goldOff = restaurant?.gold?.text;
   const proOff = offers.length > 1 ? offers[0].text : null;
@@ -48,12 +47,10 @@ const ExploreCard = ({ restaurant, i }) => {
         {cuisines.length && (
           <div className="res-cuisine">
             {cuisines.map((item, i) => (
-              
-                <span className="res-cuisine-tag">
-                  {item}
-                  {i !== cuisines.length - 1 && ","}
-                </span>
-              
+              <span className="res-cuisine-tag">
+                {item}
+                {i !== cuisines.length - 1 && ","}
+              </span>
             ))}
           </div>
         )}

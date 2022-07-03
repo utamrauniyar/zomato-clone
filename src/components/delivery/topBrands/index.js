@@ -70,22 +70,24 @@ const settings = {
 };
 
 const TopBrands = () => {
-  return <div className="top-brands max-width">
-    <div className="collection-title">Top brands for you</div>
-    <Slider {...settings}>
-      {topBrandsList.map((brand) => (
-        <div>
-          <div className="top-brands-cover">
-            <img
-              className="top-brands-image"
-              src={brand.cover}
-              alt={brand.title}
-            />
+  return (
+    <div className="top-brands max-width">
+      <div className="collection-title">Top brands for you</div>
+      <Slider {...settings}>
+        {topBrandsList.map((brand) => (
+          <div>
+            <div className="top-brands-cover">
+              <img
+                className="top-brands-image"
+                src={brand.cover}
+                alt={brand.time}
+              />
+            </div>
           </div>
-        </div>
-      ))}
-    </Slider>
-  </div>;
+        ))}
+      </Slider>
+    </div>
+  );
 };
 
 export default TopBrands;

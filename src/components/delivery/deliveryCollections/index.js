@@ -60,11 +60,23 @@ const deliveryItems = [
     cover:
       "https://b.zmtcdn.com/data/o2_assets/c5f679b7ce4d7cf0b08f120e77d22e2d1632716660.png",
   },
+  {
+    id: 10,
+    title: "Paratha",
+    cover:
+      "https://b.zmtcdn.com/data/dish_images/49a62bf16f88e7d22994e387626292161632717505.png",
+  },
+  {
+    id: 11,
+    title: "Pastry",
+    cover:
+      "https://b.zmtcdn.com/data/homepage_dish_data/4/f06d9a57b0847677e36f163a7b7fe54a.png",
+  },
 ];
 
 const settings = {
   infinite: false,
-  slidesToShow: 6,
+  slidesToShow: 4,
   slidesToScroll: 1,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,

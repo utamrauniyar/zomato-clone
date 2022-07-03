@@ -15,16 +15,16 @@ const Header = () => {
           <div className="location-wrapper">
             <div className="location-icon-name">
               <i className="fi fi-rr-marker absolute-center location-icon"></i>
-              <div>Delhi NCR</div>
+              <div>Bangalore</div>
             </div>
-            <i className="fi fi-rr-caret-down absoluter-center"></i>
+            <i className="fi fi-rr-caret-down absolute-center"></i>
           </div>
           <div className="location-search-separator"></div>
           <div className="header-searchBar">
             <i className="fi fi-rr-search absolute-center search-icon"></i>
             <input
               className="search-input"
-              placeholder="Search for restaurant, cusine or a dish"
+              placeholder="Search for restaurant, cuisine or a dish"
             />
           </div>
         </div>
@@ -34,7 +34,7 @@ const Header = () => {
             alt="Profile"
             className="header-profile-image"
           />
-          <span className="header-username">Ram</span>
+          <span className="header-username">Utam</span>
           <i className="fi fi-rr-angle-small-down absolute-center profile-options-icon"></i>
         </div>
       </div>

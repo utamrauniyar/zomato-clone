@@ -1,5 +1,5 @@
 import React from "react";
-import { restaurants } from "../../data/restaturants";
+import { restaurants } from "../../data/restaurants";
 import ExploreSection from "../common/exploreSection";
 import Filters from "../common/filters";
 import "./delivery.css";
@@ -35,7 +35,7 @@ const deliveryFilters = [
   },
 ]
 
-const restaturantsList = restaurants;
+const restaurantsList = restaurants;
 
 const Delivery = () => {
   return (
@@ -46,8 +46,8 @@ const Delivery = () => {
       <DeliveryCollections />
       <TopBrands />
       <ExploreSection
-        restaurants={restaturantsList}
-        collectionName="Delivery Restaurantss in Delhi NCR"
+        restaurants={restaurantsList}
+        collectionName="Delivery Restaurants in Bangalore"
       />
     </div>
   );

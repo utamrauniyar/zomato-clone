@@ -20,7 +20,7 @@ const diningFilters = [
   {
     id: 3,
     title: "Distance",
-    icon: <i className="fi fi-rr-apps-sort absolute-center"></i>,
+    icon: <i className="fi fi-rr-sort-alt absolute-center"></i>,
   },
   {
     id: 5,
@@ -117,7 +117,7 @@ const DiningOut = () => {
       </div>
       <ExploreSection
         restaurants={diningList}
-        collectionName="Dine-out Restaurants in Delhi NCR"
+        collectionName="Dine-Out Restaurants in Bangalore"
       />
     </div>
   );

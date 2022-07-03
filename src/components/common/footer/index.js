@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
-    <div className="absolute-center max-width">This is🔥Footer</div>
-  )
+    <div className="absolute-center max-width">Made by🔥Utam🙏🙏</div>
+  );
 };
 
 export default Footer;

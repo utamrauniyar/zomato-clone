@@ -8,11 +8,11 @@ const PrevArrow = (props) => {
       style={{
         ...style,
         background: "white",
-        borderRadius: "50%",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: "4px",
+        // borderRadius: "50%",
+        display: "block",
+        // justifyContent: "center",
+        // alignItems: "center",
+        // padding: "4px",
       }}
       onClick={onClick}
     ></div>

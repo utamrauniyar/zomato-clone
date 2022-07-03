@@ -7,7 +7,7 @@ import "./collection.css";
 
 const settings = {
   infinite: false,
-  slidesToShow: 6,
+  slidesToShow: 4,
   slidesToScroll: 1,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
@@ -21,15 +21,15 @@ const Collection = ({ list }) => {
         <div className="collection-subtitle-row">
           <div className="collection-subtitle-text">
             Explore curated lists of top restaurants, cafes, pubs, and bars in
-            Delhi NCR, based on trends
+            Bengaluru, based on trends
           </div>
           <div className="collection-location">
-            <div>All collections in Delhi NCR</div>
+            <div>All Collections in Bangalore </div>
             <i className="fi fi-rr-caret-right absolute-center"></i>
           </div>
         </div>
         <Slider {...settings}>
-          {list.map((item) => {
+          {list.map((item) => (
             <div>
               <div className="collection-cover">
                 <img
@@ -45,7 +45,7 @@ const Collection = ({ list }) => {
                 </div>
               </div>
             </div>
-          })}
+          ))}
         </Slider>
       </div>
     </div>

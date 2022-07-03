@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import { nightLife } from "../../data/nightLife";
-import Collection from '../common/collection';
-import ExploreSection from '../common/exploreSection';
-import Filters from '../common/filters';
-import "./nightLife.css";
+import Collection from "../common/collection";
+import ExploreSection from "../common/exploreSection";
+import Filters from "../common/filters";
+import "./nightlife.css";
 
 const nightLifeList = nightLife;
 const nightFilters = [
@@ -20,7 +20,7 @@ const nightFilters = [
   {
     id: 3,
     title: "Distance",
-    icon: <i className="fi fi-rr-apps-sort absolute-center"></i>,
+    icon: <i className="fi fi-rr-sort-alt absolute-center"></i>,
   },
   {
     id: 5,
@@ -31,6 +31,7 @@ const nightFilters = [
     title: "Pubs & Bars",
   },
 ];
+
 const collectionList = [
   {
     id: 1,
@@ -76,19 +77,19 @@ const collectionList = [
   },
 ];
 
-const NightLife = () => {
+const Nightlife = () => {
   return (
     <div>
       <Collection list={collectionList} />
-      <div className='max-width'>
+      <div className="max-width">
         <Filters filterList={nightFilters} />
       </div>
       <ExploreSection
         restaurants={nightLifeList}
-        collectionName="Night Life Restaurant in Delhi NCR"
+        collectionName="Nightlife Restaurants in Bangalore"
       />
     </div>
   );
 };
 
-export default NightLife;
+export default Nightlife;
